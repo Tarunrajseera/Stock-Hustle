@@ -1,0 +1,194 @@
+/* Ensure you have imported Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Set Poppins as the default font */
+}
+
+/* Login/Signup page styling */
+.login-signup-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('C:\Freelancing\StockQuest\frontend\stockquest\src\assets\jean-luc-picard-4BnWyHqwu8g-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Containers with black gradient background */
+.login-container,
+.signup-container {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); /* Full black gradient */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.login-container:hover,
+.signup-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading text color */
+.login-container h1,
+.signup-container h1 {
+    color: #ffffff; /* White text */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Form container styling */
+.login-box,
+.signup-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Form section titles */
+.login-box h2,
+.signup-box h2 {
+    font-size: 1.5rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 10px;
+}
+
+/* Form layout */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+/* Input fields with black background and white text */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid rgba(186, 238, 238, 0.8);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background for inputs */
+    color: #ffffff; /* White text for inputs */
+    transition: border-color 0.3s;
+}
+
+/* Placeholder text styling */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="date"]::placeholder,
+input[type="email"]::placeholder {
+    color: #f2f6f8;
+}
+
+/* Focus effect on input fields */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+    border-color: #f0c040;
+    outline: none;
+}
+
+/* Signup button styling */
+.signup-button {
+    padding: 10px;
+    background-color: rgba(240, 192, 64, 0.9); /* Golden button */
+    color: #000; /* Black text on button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for signup button */
+.signup-button:hover {
+    background-color: rgba(211, 166, 48, 0.9);
+    transform: scale(1.05);
+}
+
+/* Links and forgotten account */
+.forgotten-account,
+.signup-link,
+.login-link {
+    text-align: center;
+    display: block;
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.forgotten-account:hover,
+.signup-link:hover,
+.login-link:hover {
+    color: #f0c040; /* Gold on hover */
+    text-decoration: underline;
+}
+
+/* Additional styling for dob and gender fields */
+.dob1,
+.gender {
+    color: #f0f0f0;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Gender input styling */
+.gender input {
+    margin-right: 5px;
+}
+
+/* Error message */
+.error-message {
+    color: #d9534f; /* Red error message */
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+    .login-container,
+    .signup-container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .login-container h1,
+    .signup-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-box h2,
+    .signup-box h2 {
+        font-size: 1.25rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .forgotten-account,
+    .signup-link,
+    .login-link {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="email"] {
+        font-size: 0.9rem;
+    }
+}
